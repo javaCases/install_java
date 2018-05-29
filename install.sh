@@ -5,19 +5,18 @@ if [ ! $(whoami) == "root" ] ;then
   exit 0;
 fi
 
-#yum update -y 
-#yum install -y gcc gcc-c++ openssl-devel curl-devel expat-devel perl-ExtUtils-MakeMaker package ncurses-devel make wget
+yum update -y 
+yum install -y gcc gcc-c++ openssl-devel curl-devel expat-devel perl-ExtUtils-MakeMaker package ncurses-devel make wget
 
 APP_PATH=/home/vimda/app
 
 mkdir -p ${APP_PATH}
 
 #wget https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.9.5.tar.gz
-#tar -zxvf git-2.9.5.tar.gz
-#make prefix=/usr/local all
-#make prefix=/usr/local install 
-#rm -rf git-2.9.5*
-#git clone https://github.com/javaCases/install_java.git
+tar -zxvf git-2.9.5.tar.gz
+make prefix=/usr/local all
+make prefix=/usr/local install 
+rm -rf git-2.9.5*
 
 
 cd /home/vimda/install_java
