@@ -14,12 +14,15 @@ mkdir -p ${APP_PATH}
 
 #wget https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.9.5.tar.gz
 tar -zxvf git-2.9.5.tar.gz
+cd git-2.9.5
+
 make prefix=/usr/local all
 make prefix=/usr/local install 
-rm -rf git-2.9.5*
+#rm -rf git-2.9.5*
 
 
 cd /home/vimda/install_java
+
 # install java
 cat jdk-8u171-linux-x64* > jdk-8u171-linux-x64.tar.gz
 tar -zxvf jdk-8u171-linux-x64.tar.gz
@@ -43,4 +46,4 @@ echo "export MAVEN_OPTS='-Xms256m -Xmx512m'" >> /home/vimda/.bashrc
 
 
 
-
+rm -rf /home/vimda/install_java
