@@ -44,6 +44,7 @@ echo "export M2_HOME=/home/vimda/app/apache-maven-3.5.3" >> /home/vimda/.bashrc
 echo "export PATH=\${PATH}:\${M2_HOME}/bin" >> /home/vimda/.bashrc
 echo "export MAVEN_OPTS='-Xms256m -Xmx512m'" >> /home/vimda/.bashrc
 
-
-
 rm -rf /home/vimda/install_java
+
+cp /usr/share/zoneinfo/Asia/Hong_Kong /etc/localtime
+
